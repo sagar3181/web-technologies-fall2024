@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Camp Adventure</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f8ff;
+            color: #000000;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid #000000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4caf50;
+        }
+        nav {
+            background-color: #4caf50;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        nav a {
+            color: rgb(255, 255, 255);
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #45a049;
+        }
+        h1.title {
+            font-family: 'Fredoka One', cursive;
+            font-size: 3em;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4caf50;
+        }
+        h1#welcome {
+            text-align: center;
+        }
+        h2, h3 {
+            font-family: 'Fredoka One';
+            text-align: center;
+            color: #4caf50;
+        }
+        h2 {
+            font-size: 2.5em;
+            margin-top: 30px;
+        }
+        h3 {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+        blockquote {
+            text-align: center;
+            font-style: italic;
+            color: #555;
+        }
+        form {
+            text-align: center;
+            margin: 20px 0;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        input, select, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: #4caf50;
+            outline: none;
+        }
+        .contact-box {
+            border: 2px solid #4caf50;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">SUMMER CAMP Adventure</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#activities">Activities</a>
+        <a href="#staff">Staff</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <h1 id="welcome">Welcome to Our Summer Camp Adventure!</h1>
+    <blockquote>"Summer camp is not just a place; it’s a feeling of freedom, friendship, and fun."</blockquote>
+    <!--Above line is from LLM!-->
+    <h2>About Our Camp</h2>
+    <p>Join us for an unforgettable summer filled with fun, learning, and adventure! Our summer camp offers a variety of activities designed to help campers make new friends and create lasting memories.</p>
+    <!--Above line is from LLM!-->
+    <img src="summer-camp-1280x640.jpg" alt="Children enjoying summer camp activities">
+    <h3 id="activities">Camp Activities</h3>
+    <h4>Here are some of the activities we offer:</h4>
+    <ul>
+        <li>Junkyard Wars</li>
+        <li>Nature scavenger hunt</li>
+        <li>Water balloon dodge ball</li>
+        <li>Ninja Warrior course</li>
+        <li>Solar oven cooking</li>
+    </ul>
+    <p>For more information about the camp, visit our official site <a href="https://example.com" target="_blank">XYZ</a>!</p>
+    <hr>
+    <h2 id="staff">Our Staff</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Experience</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Camp Director</td>
+            <td>10 years</td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>Camp Leader</td>
+            <td>5 years</td>
+        </tr>
+        <tr>
+            <td>Rahul</td>
+            <td>Counselor</td>
+            <td>2.5 years</td>
+        </tr>
+    </table>
+    <h2 id="contact">Contact Us</h2>
+    <div class="contact-box">
+        <form>
+            <input type="text" placeholder="Child Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="tel" placeholder="Your Phone Number" required>
+            <label for="relationship">Relationship with Child:</label>
+            <select id="relationship" required>
+                <option value="" disabled selected>Select your relationship</option>
+                <option value="parent">Parent</option>
+                <option value="guardian">Guardian</option>
+                <option value="friend">Friend</option>
+            </select>
+            <label for="activityInterest">Activity Child is Interested In:</label>
+            <select id="activityInterest" required>
+                <option value="" disabled selected>Select an activity</option>
+                <option value="Junkyard Wars">Junkyard Wars</option>
+                <option value="Nature scavenger hunt">Nature scavenger hunt</option>
+                <option value="Water balloon dodge ball">Water balloon dodge ball</option>
+                <option value="Ninja warrior course">Ninja warrior course</option>
+                <option value="Solar oven cooking">Solar oven cooking</option>
+            </select>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</body>
+</html>
